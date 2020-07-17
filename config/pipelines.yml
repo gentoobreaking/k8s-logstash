@@ -1,0 +1,54 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+- pipeline.id: logstash_nsports_mobile
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_mobile.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_api
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_api.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_socket
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_socket.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_consumer
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_consumer.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_cronjob
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_cronjob.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsport_transmit_au
+  path.config: "/usr/share/logstash/pipeline/logstash_nsport_transmit_au.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_sub
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_sub.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_iap
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_iap.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_bo_django
+  path.config: "/usr/share/logstash/pipeline/logstash_bo_django.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_bo_celery
+  path.config: "/usr/share/logstash/pipeline/logstash_bo_celery.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_bo_ui
+  path.config: "/usr/share/logstash/pipeline/logstash_bo_ui.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_bo_nginx
+  path.config: "/usr/share/logstash/pipeline/logstash_bo_nginx.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_bo_cronjob
+  path.config: "/usr/share/logstash/pipeline/logstash_bo_cronjob.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_nlp1
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_nlp1.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_nlp2
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_nlp2.conf"
+  pipeline.workers: 2
+- pipeline.id: logstash_nsports_nlp3
+  path.config: "/usr/share/logstash/pipeline/logstash_nsports_nlp3.conf"
+  pipeline.workers: 2
+
+# --- END --- #
